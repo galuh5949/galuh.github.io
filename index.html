@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Absensi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Absensi</h1>
+    <form id="absensiForm">
+        <label for="nama">Nama:</label>
+        <input type="text" id="nama" required>
+
+        <label for="hadir">Hadir:</label>
+<input type="radio" name="hadir" value="Ya" id="hadir-ya" checked>
+<label for="hadir-ya">Ya</label>
+
+<input type="radio" name="hadir" value="Tidak" id="hadir-tidak">
+<label for="hadir-tidak">Tidak</label>
+
+<label for="alasan">Alasan Ketidakhadiran:</label>
+<textarea id="alasan"></textarea>
+
+        <button type="submit">Absen</button>
+    </form>
+
+    <div id="absensiData">
+        <!-- Data absensi akan ditampilkan di sini -->
+    </div>
+
+    <script src="script.js"></script>
+
+  
+
+</body>
+</html>
